@@ -1,0 +1,18 @@
+@extends('layout.template') {{-- Template --}}
+@section('title','บันทึกสถานะระบบ') {{-- Title --}}
+
+@section('content') {{-- Content --}}
+<ol class="breadcrumb bg-white">
+    {{-- <li class="breadcrumb-item">บันทึกปัญหาภายนอก</li> --}}
+    <li class="breadcrumb-item">@yield('title')</li>
+</ol>
+<div id="app">
+    <it-extpb-syssts>
+    </it-extpb-syssts>
+</div>
+<script>
+    const app = new Vue({
+        el: "#app"
+    });
+</script>
+@endsection
